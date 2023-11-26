@@ -26,7 +26,7 @@ $(document).ready(function() {
                 
           var data = JSON.parse(response); 
          if(data.message === 'Success'){
-          window.location.href = '/profile.html';
+          window.location.href = 'profile.html';
          }
          else if(data.message === 'Invalid email'){
           $('#login-error').html('Invaild Email').removeClass('d-none');
