@@ -1,0 +1,13 @@
+.form-outline .form-label {
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s ease-in-out;
+}
+
+.form-outline .form-label.active {
+    top: 60px;
+    font-size: 12px;
+}

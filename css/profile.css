@@ -1,0 +1,12 @@
+.row.z-depth-10 {
+    box-shadow: 5px -5px 5px  5px rgba(0, 0, 0, 0.5);
+}
+
+.date{
+    margin-top: 30px;
+}
+
+.info{
+    display: flex;
+}
+

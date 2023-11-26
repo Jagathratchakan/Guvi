@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+     rel="stylesheet"/>
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"/>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css"
+    rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Js/profile.js"></script>
+</head>
+<body style="background-color: grey;">
+  
+    <section class="bg-light">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+          <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col- col-md-12 col-lg-14 col-xl-13">
+                <div class="card mt-4 md-4" style="border-radius: 15px;">
+                  <div class="card-body p-5">
+                    <div class="row">
+                      <div class="col-md-4">
+                       
+                        <div class="text-center">
+                            <i class="fas fa-user-tie fa-7x"></i>
+                          <h4 id='Name' class="profile-name mt-5"></h4>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        
+                        <div class="profile-details">
+                            <h3 class="text-center">Additional Information</h3>
+                            <hr size="5" a>
+                            <div class="info">
+                            <div class="form-outline mb-4">
+                              <h4>Email id:</h4>
+                              <i id="emailV"></i>
+                              <i class="fas fa-pencil-alt edit-icon" onclick="editField('emailV')"></i>
+                            </div>
+                            <div class="form-outline mb-4">
+                              <h4>Phone:</h4>
+                              <i id="phoneValue" type="number"></i>
+                              <i class="fas fa-pencil-alt edit-icon" onclick="editField('phoneValue')"></i>
+                            </div>
+                            </div>
+                            <div class="info">
+                            <div class="form-outline mb-4">
+                                <h4>Id_Name</h4>
+                                <i id="nice"></i>
+                                <i class="fas fa-pencil-alt edit-icon" onclick="editField('nice')"></i>
+                              </div>
+                              <div class="form-outline mb-4">
+                                <h4>Age</h4>
+                                <i id="ph"></i>
+                                <i class="fas fa-pencil-alt edit-icon" onclick="editField('ph')"></i>
+                              </div>
+                           </div>
+                           
+                          </div>
+
+                          <div class="info">
+                            <div class="form-outline mb-4">
+                              </div>
+                              <div class="form-outline mb-4">
+                                <button id="regs" type="button"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body " id="Update">Update</button>
+                              </div>
+                           </div>
+                           
+                          </div>
+
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </body>
+</html>
