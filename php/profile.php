@@ -1,6 +1,11 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-$email = $_POST["Email"];
+  $sessionId = $_SERVER['HTTP_SESSION_ID'];
+
+  $redis = new Redis();
+  $redis->connect('localhost', 6379);
+$email = $redis->get('session:' . $sessionId);;
 $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
 $query = new MongoDB\Driver\Query(array('Email' => $email));
 
@@ -32,5 +37,6 @@ echo json_encode(array('Phone' =>$pho,'Email' =>$em,'Age'=>$age,'Name'=>$name,"i
 //echo json_encode(array('Email' =>$em));
 //echo json_encode(array('Age' =>$age));
 //echo json_encode(array('Age' =>$profileData[0]->Age));
+}
 }
 ?>
