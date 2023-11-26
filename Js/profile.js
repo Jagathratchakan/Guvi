@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   $.ajax({
-    url: "php/profile.php",
+    url: "/test/guvi/php/profile.php",
     type: "GET",
     dataType: "json",
     success: function(data) {
@@ -17,6 +17,26 @@ $(document).ready(function() {
       console.log(textStatus, errorThrown);
     }
   });
+
+  $('#regs').click(function() {{
+
+    var phone = $('#phoneValue').val();
+    var nice = $('#nice').val();
+    $.ajax({
+      url: "/test/guvi/php/update.php",
+      type: "POST",
+      data: {
+        phone:phone,
+        nice:nice,
+      },
+      success: function(data) {
+        console.log("Success");
+      },
+      error: function(jqXHR, textStatus, errorThrown) {
+        
+      }
+  });
+  }
 });
 
 
