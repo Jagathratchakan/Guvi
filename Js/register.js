@@ -27,7 +27,7 @@ $(document).ready(function() {
 
         // Send AJAX request to register.php
         $.ajax({
-            url: '/test/guvi/php/register.php',
+            url: 'php/register.php',
             type: 'POST',
             data: {
                 name: profileName,
