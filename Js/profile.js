@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   $.ajax({
-    url: "/test/guvi/php/profile.php",
+    url: "php/profile.php",
     type: "GET",
     dataType: "json",
     success: function(data) {
