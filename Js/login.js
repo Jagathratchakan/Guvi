@@ -15,7 +15,7 @@ $(document).ready(function() {
       }
       
       $.ajax({
-        url: '/test/guvi/php/login.php',
+        url: 'php/login.php',
         type: 'POST',
         data: {
             email: email,
