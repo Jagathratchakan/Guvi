@@ -33,8 +33,8 @@ $sql = "CREATE TABLE register (
 if ($con->query($sql) === TRUE) {
     echo "Table created successfully";
 } else {
-    echo "Error creating table: " . $conn->error;
+    echo "Error creating table: " . $con->error;
 }
 
 // Close connection
-$conn->close();
+$con->close();
