@@ -32,35 +32,7 @@ Log in using the created credentials on the Login page.
 
 Explore the Profile page to view and edit user profile information.
 
-File Structure
-plaintext
-Copy code
-dynamic-web-profile/
-│
-├── css/
-│   ├── register.css
-│   ├── login.css
-│   ├── profile.css
-│   └── ...
-│
-├── js/
-│   ├── register.js
-│   ├── login.js
-│   ├── profile.js
-│   └── ...
-│
-│
-├── php/
-│   ├── config.php
-│   ├── register.php
-│   ├── login.php
-│   ├── profile.php
-│   └── ...
-│
-├── index.html
-├── register.html
-├── login.html
-└── profile.html
+
 
 # Technologies Used
 HTML, CSS, JavaScript
